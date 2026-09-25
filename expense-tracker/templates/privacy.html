@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1 class="auth-title">Privacy Policy</h1>
+            <p class="auth-subtitle">How we handle your personal and financial information</p>
+        </div>
+
+        <div class="auth-card">
+            <div style="text-align: left; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.7;">
+                <p style="font-size: 0.8rem; color: var(--ink-muted); margin-bottom: 1.5rem;">Last Updated: September 25, 2026</p>
+
+                <h3 style="color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; margin: 1.5rem 0 0.5rem;">1. Information We Collect</h3>
+                <p>We collect your full name, email, and password for authentication, and the expense records you manually enter.</p>
+
+                <h3 style="color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; margin: 1.5rem 0 0.5rem;">2. How We Use Data</h3>
+                <p>Your data is used exclusively to provide the expense tracking service. We do not sell or share your personal information with third parties.</p>
+
+                <h3 style="color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; margin: 1.5rem 0 0.5rem;">3. Data Security</h3>
+                <p>We use standard security measures, including password encryption, to protect your information.</p>
+
+                <h3 style="color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; margin: 1.5rem 0 0.5rem;">4. Cookies</h3>
+                <p>Spendly uses only essential session cookies to keep you logged in. No third-party tracking is used.</p>
+
+                <h3 style="color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; margin: 1.5rem 0 0.5rem;">5. Your Rights</h3>
+                <p>You may request access to or deletion of your data by contacting us.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="{{ url_for('landing') }}" class="btn-ghost" style="display: inline-block;">Return Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
